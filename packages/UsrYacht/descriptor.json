@@ -3,9 +3,16 @@
     "UId": "850bb041-4604-42e0-9726-6b502169ca23",
     "Name": "UsrYacht",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1731959136000)\/",
+    "ModifiedOnUtc": "\/Date(1794509558000)\/",
     "Maintainer": "Customer",
     "ProjectPath": "Files/UsrYacht.csproj",
-    "DependsOn": []
+    "DependsOn": [
+      {
+        "UId": "38d54730-8a64-4305-b04f-a240900b2f9f",
+        "Name": "UsrMain",
+        "Type": 1,
+        "InstallBehavior": 1
+      }
+    ]
   }
 }

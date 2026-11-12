@@ -1,0 +1,44 @@
+﻿2026-11-11 19:22:35,300 Loading file: Yacht.zip 100%
+2026-11-11 19:22:35,443 Application install from file started. Application name: Yacht. Code: Yacht.
+2026-11-11 19:22:35,443 Preparing packages for installation
+2026-11-11 19:22:36,888 Loading packages from archive
+2026-11-11 19:22:36,927 Package "cliogate" loaded
+2026-11-11 19:22:37,014 Loading packages from archive
+2026-11-11 19:22:37,029 Package "UsrYacht" loaded
+2026-11-11 19:22:37,041 Loading packages from database
+2026-11-11 19:22:40,134 Composing packages
+2026-11-11 19:22:42,015 Schema "UsrTrafficLight" saved in package "UsrYacht"
+2026-11-11 19:22:42,036 Package "UsrYacht" saved
+2026-11-11 19:22:42,082 Modified - dependencies of package "UsrYacht"
+2026-11-11 19:22:42,097 Modified - resources in package "UsrYacht"
+2026-11-11 19:22:42,199 Modified - schema caption localizations in package "UsrYacht"
+2026-11-11 19:22:42,859 Updating tables structure in database
+2026-11-11 19:22:44,307 Schema source code "UsrTrafficLight" from package UsrYacht generated
+2026-11-11 19:22:44,860 Schema source code "UsrTrafficLight" from package  generated
+2026-11-11 19:22:44,880 Updating modified schemas
+2026-11-11 19:22:44,880 Updated modified schemas
+2026-11-11 19:22:45,518 Actions skipped for schema "UsrTrafficLight" from package "UsrYacht" in 2.219 sec
+2026-11-11 19:22:45,549 Installing data
+2026-11-11 19:22:45,688 Executing default install scripts
+2026-11-11 19:22:45,692 Default install script "Creatio.Copilot.GrantDefIntentPermissionsExecutor" executed for package "UsrYacht"
+2026-11-11 19:22:45,692 Default install script "Creatio.Copilot.KnwSrcPackageInstallExecutor" executed for package "UsrYacht"
+2026-11-11 19:22:45,817 Saving application info to the system (code: UsrYacht)...
+2026-11-11 19:22:45,887 App with code UsrYacht already exists and checksums are equal - saving skipped
+2026-11-11 19:22:45,948 Configuration build started
+2026-11-11 19:22:45,962 Current schemas info loaded
+2026-11-11 19:22:46,571 New schemas info loaded
+2026-11-11 19:22:46,929 Configuration state loaded
+2026-11-11 19:22:46,929 Configuration server content generation started
+2026-11-11 19:22:47,008 Configuration server content generated
+2026-11-11 19:22:47,115 Schema JS module descriptors updated
+2026-11-11 19:22:47,115 Schema JS module items loaded
+2026-11-11 19:22:47,115 Schema JS module paths generated
+2026-11-11 19:22:47,115 Schema JS module paths updated
+2026-11-11 19:22:47,134 Schema content bootstrap updated
+2026-11-11 19:22:47,206 Meta info file updated
+2026-11-11 19:22:47,208 File content generation started
+2026-11-11 19:22:47,800 File content descriptors obtained
+2026-11-11 19:22:47,846 File content descriptors generated
+2026-11-11 19:22:47,852 File content bootstraps generated
+2026-11-11 19:22:47,852 Configuration build finished
+2026-11-11 19:22:48,107 Application installed successfully

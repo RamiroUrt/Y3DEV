@@ -4,26 +4,17 @@
 		<Items>
 			<Item Name="Caption" Value="Yachts" />
 			<Item Name="Columns.UsrCaptain.Caption" Value="Captain" />
-			<Item Name="Columns.UsrColumn17.Caption" Value="Name" />
-			<Item Name="Columns.UsrColumn18.Caption" Value="Length" />
-			<Item Name="Columns.UsrColumn19.Caption" Value="Captain" />
-			<Item Name="Columns.UsrColumn23.Caption" Value="Drive type" />
-			<Item Name="Columns.UsrColumn24.Caption" Value="Image" />
-			<Item Name="Columns.UsrColumn25.Caption" Value="Status" />
-			<Item Name="Columns.UsrColumn26.Caption" Value="Manager" />
-			<Item Name="Columns.UsrColumn27.Caption" Value="Comment" />
 			<Item Name="Columns.UsrComment.Caption" Value="Comment" />
-			<Item Name="Columns.UsrCrewControl.Caption" Value="CrewControl" />
 			<Item Name="Columns.UsrCrewCount.Caption" Value="Crew count" />
-			<Item Name="Columns.UsrDriveType.Caption" Value="Drive type" />
+			<Item Name="Columns.UsrDriveTipe.Caption" Value="Drive type" />
 			<Item Name="Columns.UsrImage.Caption" Value="Image" />
-			<Item Name="Columns.UsrLength.Caption" Value="Lenght" />
+			<Item Name="Columns.UsrLength.Caption" Value="Length" />
 			<Item Name="Columns.UsrManager.Caption" Value="Manager" />
 			<Item Name="Columns.UsrName.Caption" Value="Name" />
-			<Item Name="Columns.UsrParssengeCount.Caption" Value="Parssenge count" />
 			<Item Name="Columns.UsrPassengerCount.Caption" Value="Passenger count" />
 			<Item Name="Columns.UsrPrice.Caption" Value="Price per day, USD" />
 			<Item Name="Columns.UsrStatus.Caption" Value="Status" />
+			<Item Name="Columns.UsrYachtNumber.Caption" Value="Yacht number" />
 		</Items>
 	</Group>
 </Resources>

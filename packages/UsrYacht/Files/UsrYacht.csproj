@@ -692,11 +692,6 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="UsrMain">
-			<HintPath>$(RelativePkgFolderPath)/UsrMain/$(StandalonePackageAssemblyPath)/UsrMain.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="XSSProtection">
 			<HintPath>$(RelativePkgFolderPath)/XSSProtection/$(StandalonePackageAssemblyPath)/XSSProtection.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -705,12 +700,13 @@
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
+		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrCategoryinYacht/UsrCategoryinYacht.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrCategoryinYacht/UsrCategoryinYacht.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrDriveType/UsrDriveType.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrDriveType/UsrDriveType.cs')" />
-		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrDriveTypes/UsrDriveTypes.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrDriveTypes/UsrDriveTypes.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrListYacht/UsrListYacht.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrListYacht/UsrListYacht.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrTrafficLight/UsrTrafficLight.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrTrafficLight/UsrTrafficLight.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrYachtStatus/UsrYachtStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrYachtStatus/UsrYachtStatus.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrYarchtCategory/UsrYarchtCategory.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYacht/Schemas/UsrYarchtCategory/UsrYarchtCategory.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">

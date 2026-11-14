@@ -3,13 +3,19 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Yachts form page" />
+			<Item Name="LocalizableStrings.Categories_label.Value" Value="Categories" />
+			<Item Name="LocalizableStrings.DriveType_tooltip.Value" Value="And how her wacht has emded" />
+			<Item Name="LocalizableStrings.Status_tooltip.Value" Value="And how her wacht has emded" />
+			<Item Name="LocalizableStrings.addRecord_3j1x0w1_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_4xw2jub_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_cfpfte9_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_fm6isbj_caption.Value" Value="Add new" />
-			<Item Name="LocalizableStrings.addRecord_hcfy1g8_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_gu0gy7q_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_i8tkxqi_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_okqdc3x_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_qfdv2os_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_wvlxx04_caption.Value" Value="Add new" />
-			<Item Name="LocalizableStrings.addRecord_wyp58lw_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_z24jjnf_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_zg8qy5t_caption.Value" Value="Add new" />
 		</Items>
 	</Group>

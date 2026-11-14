@@ -11,6 +11,41 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 			},
 			{
 				"operation": "merge",
+				"name": "TagSelect",
+				"values": {
+					"tagInRecordSourceSchemaName": "TagInRecord"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "CardContentWrapper",
+				"values": {
+					"padding": {
+						"left": "small",
+						"right": "small",
+						"top": "none",
+						"bottom": "none"
+					},
+					"visible": true,
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "SideAreaProfileContainer",
+				"values": {
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"visible": true,
+					"alignItems": "stretch"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "Tabs",
 				"values": {
 					"styleType": "default",
@@ -21,6 +56,13 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 					"underlineSelectedTabColor": "auto",
 					"headerBackgroundColor": "auto",
 					"allowToggleClose": true
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "GeneralInfoTab",
+				"values": {
+					"iconPosition": "only-text"
 				}
 			},
 			{
@@ -44,6 +86,51 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 				}
 			},
 			{
+				"operation": "merge",
+				"name": "CardToggleTabPanel",
+				"values": {
+					"styleType": "default",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"selectedTabTitleColor": "auto",
+					"tabTitleColor": "auto",
+					"underlineSelectedTabColor": "auto",
+					"headerBackgroundColor": "auto",
+					"allowToggleClose": true
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "AttachmentList",
+				"values": {
+					"columns": [
+						{
+							"id": "73ab6956-b8a1-9dd3-755a-10a6ca716380",
+							"code": "AttachmentListDS_Name",
+							"caption": "#ResourceString(AttachmentListDS_Name)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "5a17ca21-3c27-a76c-cb7d-c0dd0df77a23",
+							"code": "AttachmentListDS_CreatedOn",
+							"caption": "#ResourceString(AttachmentListDS_CreatedOn)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "57975912-2ef0-6eaf-f447-b1b0852f0698",
+							"code": "AttachmentListDS_CreatedBy",
+							"caption": "#ResourceString(AttachmentListDS_CreatedBy)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "20efc9b0-54d8-3438-23bf-0cb639cec322",
+							"code": "AttachmentListDS_Size",
+							"caption": "#ResourceString(AttachmentListDS_Size)#",
+							"dataValueType": 4
+						}
+					]
+				}
+			},
+			{
 				"operation": "insert",
 				"name": "Name",
 				"values": {
@@ -54,8 +141,8 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_UsrColumn17_gv6cga3",
-					"control": "$PDS_UsrColumn17_gv6cga3",
+					"label": "$Resources.Strings.PDS_UsrName_7452zfa",
+					"control": "$PDS_UsrName_7452zfa",
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
@@ -77,8 +164,8 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_UsrPrice_snq1g91",
-					"control": "$PDS_UsrPrice_snq1g91",
+					"label": "$Resources.Strings.PDS_UsrPrice_8cog7lo",
+					"control": "$PDS_UsrPrice_8cog7lo",
 					"readonly": false,
 					"placeholder": "",
 					"labelPosition": "auto",
@@ -90,7 +177,7 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 			},
 			{
 				"operation": "insert",
-				"name": "UsrImage",
+				"name": "Image",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -99,8 +186,8 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.ImageInput",
-					"label": "$Resources.Strings.PDS_UsrColumn24_z5agthj",
-					"value": "$PDS_UsrColumn24_z5agthj",
+					"label": "$Resources.Strings.PDS_UsrImage_507le4h",
+					"value": "$PDS_UsrImage_507le4h",
 					"readonly": false,
 					"placeholder": "",
 					"labelPosition": "auto",
@@ -114,7 +201,31 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_5hgjq7u",
+				"name": "YachtNumber",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrYachtNumber_u4ps3q9",
+					"control": "$PDS_UsrYachtNumber_u4ps3q9",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": true,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "Length",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -122,13 +233,14 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"row": 1,
 						"rowSpan": 1
 					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_UsrColumn18_i03gltw",
-					"control": "$PDS_UsrColumn18_i03gltw",
-					"readonly": false,
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrLength_oe9ce1m",
+					"control": "$PDS_UsrLength_oe9ce1m",
 					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -145,7 +257,7 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrColumn19_x065lut",
+					"label": "$Resources.Strings.PDS_UsrCaptain_5w41enl",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -153,7 +265,11 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_UsrColumn19_x065lut"
+					"control": "$PDS_UsrCaptain_5w41enl",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -161,12 +277,12 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_hcfy1g8",
+				"name": "addRecord_i8tkxqi",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_hcfy1g8_caption)#",
+					"caption": "#ResourceString(addRecord_i8tkxqi_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
@@ -187,8 +303,8 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_UsrCrewCount_c3570f3",
-					"control": "$PDS_UsrCrewCount_c3570f3",
+					"label": "$Resources.Strings.PDS_UsrCrewCount_vhqme2s",
+					"control": "$PDS_UsrCrewCount_vhqme2s",
 					"readonly": false,
 					"placeholder": "",
 					"labelPosition": "auto",
@@ -209,18 +325,20 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrColumn23_qnwxk85",
+					"label": "$Resources.Strings.PDS_UsrDriveTipe_ncads7l",
 					"ariaLabel": "",
 					"isAddAllowed": true,
-					"showValueAsLink": true,
+					"showValueAsLink": false,
 					"labelPosition": "auto",
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_UsrColumn23_qnwxk85",
+					"control": "$PDS_UsrDriveTipe_ncads7l",
 					"visible": true,
 					"readonly": false,
-					"placeholder": ""
+					"placeholder": "",
+					"valueDetails": null,
+					"secondaryDisplayValue": "Name"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -237,8 +355,8 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_UsrPassengerCount_xuc42xg",
-					"control": "$PDS_UsrPassengerCount_xuc42xg",
+					"label": "$Resources.Strings.PDS_UsrPassengerCount_o4syhcp",
+					"control": "$PDS_UsrPassengerCount_o4syhcp",
 					"readonly": false,
 					"placeholder": "",
 					"labelPosition": "auto",
@@ -250,7 +368,7 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_mwv7a6m",
+				"name": "Status",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -259,7 +377,7 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrColumn25_xlvmpvm",
+					"label": "$Resources.Strings.PDS_UsrStatus_y8uvloz",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -267,10 +385,12 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_UsrColumn25_xlvmpvm",
+					"control": "$PDS_UsrStatus_y8uvloz",
+					"valueDetails": "$Status_ValueDetails",
 					"visible": true,
 					"readonly": false,
-					"placeholder": ""
+					"placeholder": "",
+					"secondaryDisplayValue": "Name"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -278,7 +398,7 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 			},
 			{
 				"operation": "insert",
-				"name": "ListAction_u3hnu2x",
+				"name": "ListAction_g4dqn93",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
@@ -289,29 +409,28 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_mwv7a6m",
+				"parentName": "Status",
 				"propertyName": "listActions",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "Comment",
+				"name": "UsrComment",
 				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrComment_67rppgw",
+					"control": "$PDS_UsrComment_67rppgw",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 4,
 						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_UsrColumn27_tfckkom",
-					"control": "$PDS_UsrColumn27_tfckkom",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": true
+					}
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -319,7 +438,7 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_4m5ipr2",
+				"name": "Manager",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -328,7 +447,7 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrColumn26_bnfoysf",
+					"label": "$Resources.Strings.PDS_UsrManager_dkw1pgw",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -336,7 +455,11 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_UsrColumn26_bnfoysf"
+					"control": "$PDS_UsrManager_dkw1pgw",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -344,20 +467,23 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_wyp58lw",
+				"name": "Categories",
 				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_wyp58lw_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
+					"type": "crt.MultiSelect",
+					"label": "#ResourceString(Categories_label)#",
+					"recordId": "$Id_1z9zybj",
+					"recordRelationColumnName": "UsrYacht",
+					"selectSchemaName": "UsrCategoryinYacht",
+					"selectColumnName": "UsrCategory",
+					"visible": true,
+					"labelPosition": "auto",
+					"placeholder": "",
+					"tooltip": "",
+					"required": false
 				},
-				"parentName": "ComboBox_4m5ipr2",
-				"propertyName": "listActions",
-				"index": 0
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 1
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -367,55 +493,78 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 					"attributes"
 				],
 				"values": {
-					"PDS_UsrColumn17_gv6cga3": {
+					"PDS_UsrName_7452zfa": {
 						"modelConfig": {
-							"path": "PDS.UsrColumn17"
+							"path": "PDS.UsrName"
 						}
 					},
-					"PDS_UsrColumn18_i03gltw": {
-						"modelConfig": {
-							"path": "PDS.UsrColumn18"
-						}
-					},
-					"PDS_UsrColumn19_x065lut": {
-						"modelConfig": {
-							"path": "PDS.UsrColumn19"
-						}
-					},
-					"PDS_UsrColumn19_x065lut_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
-					"PDS_UsrPrice_snq1g91": {
+					"PDS_UsrPrice_8cog7lo": {
 						"modelConfig": {
 							"path": "PDS.UsrPrice"
 						}
 					},
-					"PDS_UsrCrewCount_c3570f3": {
+					"PDS_UsrImage_507le4h": {
+						"modelConfig": {
+							"path": "PDS.UsrImage"
+						}
+					},
+					"PDS_UsrDriveTipe_ncads7l": {
+						"modelConfig": {
+							"path": "PDS.UsrDriveTipe"
+						}
+					},
+					"PDS_UsrDriveTipe_ncads7l_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_UsrLength_oe9ce1m": {
+						"modelConfig": {
+							"path": "PDS.UsrLength"
+						}
+					},
+					"PDS_UsrCaptain_5w41enl": {
+						"modelConfig": {
+							"path": "PDS.UsrCaptain"
+						}
+					},
+					"PDS_UsrCaptain_5w41enl_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_UsrCrewCount_vhqme2s": {
 						"modelConfig": {
 							"path": "PDS.UsrCrewCount"
 						}
 					},
-					"PDS_UsrPassengerCount_xuc42xg": {
+					"PDS_UsrPassengerCount_o4syhcp": {
 						"modelConfig": {
 							"path": "PDS.UsrPassengerCount"
 						}
 					},
-					"PDS_UsrColumn23_qnwxk85": {
+					"PDS_UsrManager_dkw1pgw": {
 						"modelConfig": {
-							"path": "PDS.UsrColumn23"
+							"path": "PDS.UsrManager"
 						}
 					},
-					"PDS_UsrColumn23_qnwxk85_List": {
+					"PDS_UsrManager_dkw1pgw_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {
@@ -428,17 +577,17 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 							}
 						}
 					},
-					"PDS_UsrColumn24_z5agthj": {
+					"PDS_UsrComment_67rppgw": {
 						"modelConfig": {
-							"path": "PDS.UsrColumn24"
+							"path": "PDS.UsrComment"
 						}
 					},
-					"PDS_UsrColumn25_xlvmpvm": {
+					"PDS_UsrStatus_y8uvloz": {
 						"modelConfig": {
-							"path": "PDS.UsrColumn25"
+							"path": "PDS.UsrStatus"
 						}
 					},
-					"PDS_UsrColumn25_xlvmpvm_List": {
+					"PDS_UsrStatus_y8uvloz_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {
@@ -451,28 +600,23 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 							}
 						}
 					},
-					"PDS_UsrColumn26_bnfoysf": {
+					"PDS_UsrYachtNumber_u4ps3q9": {
 						"modelConfig": {
-							"path": "PDS.UsrColumn26"
+							"path": "PDS.UsrYachtNumber"
 						}
 					},
-					"PDS_UsrColumn26_bnfoysf_List": {
-						"isCollection": true,
+					"Status_ValueDetails": {
 						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
+							"path": "PDS.UsrStatusDescription"
 						}
 					},
-					"PDS_UsrColumn27_tfckkom": {
+					"Id_1z9zybj": {
 						"modelConfig": {
-							"path": "PDS.UsrColumn27"
+							"path": "PDS.Id"
 						}
+					},
+					"Categories_List_Items_Predefined_Filter": {
+						"value": null
 					}
 				}
 			}
@@ -494,7 +638,13 @@ define("UsrListYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**S
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "UsrListYacht"
+							"entitySchemaName": "UsrListYacht",
+							"attributes": {
+								"UsrStatusDescription": {
+									"path": "UsrStatus.Description",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
 					}

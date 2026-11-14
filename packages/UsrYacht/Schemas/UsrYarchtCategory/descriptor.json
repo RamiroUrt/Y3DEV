@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "5c4b1816-a4a5-4bb1-bc29-f02cf5b996e1",
+    "Name": "UsrYarchtCategory",
+    "ModifiedOnUtc": "\/Date(1794673723000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Yarcht category",
+    "DependsOn": []
+  }
+}
